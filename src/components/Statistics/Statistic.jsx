@@ -14,7 +14,7 @@ export const Statistic = ({ title, stats }) => {
         {stats.map(stat => (
           <li
             className="item"
-            id={stat.id}
+            key={stat.id}
             style={{ backgroundColor: getRandomHexColor() }}
           >
             <span className="label">{stat.label}</span>
