@@ -1,0 +1,56 @@
+.profile {
+    border: 2px solid #9b9a9a;
+    padding: 20px 20px 0;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.tag {
+    color: #999;
+    font-style: italic;
+}
+
+.location {
+    color: #534545;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% / 3);
+    border-top: 1px solid #111;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgb(248, 248, 248);
+}
+
+.stats li:first-child {
+    border-right: none;
+}
+
+.stats li:last-child {
+    border-left: none;
+}
+
+.quantity {
+    font-weight: 500;
+}
