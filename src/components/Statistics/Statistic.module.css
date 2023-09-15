@@ -9,20 +9,21 @@
     text-align: center;
 }
 
-.stat-list {
+.statList {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.stat-list .item {
+.item {
     display: flex;
     flex-direction: column;
     width: calc(100% / 5);
     padding: 10px;
+    background-color: var(--backGroundColor);
 }
 
-.item .label {
+.label {
     color: #fff;
     font-weight: 400;
 

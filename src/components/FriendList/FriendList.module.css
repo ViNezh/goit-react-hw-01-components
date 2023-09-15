@@ -1,4 +1,4 @@
-.friend-list {
+.friendList {
     display: flex;
     flex-direction: column;
     border: 2px solid #9b9a9a;
@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.friend-list .item {
+.item {
     display: flex;
     align-items: center;
     column-gap: 10px;
@@ -31,10 +31,15 @@
     border-radius: 50%;
 }
 
-#online {
+.online {
     background-color: green;
 }
 
-#offline {
+.offline {
     background-color: red;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 500;
 }
