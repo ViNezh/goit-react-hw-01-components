@@ -1,5 +1,5 @@
 import css from './Transaction.module.css';
-import PropTypes from 'prop-types';
+import { TransactionItem } from './TransactionItem';
 export const TransactionHistory = ({ transactions }) => {
   return (
     <section className={css.transactionHistory}>
@@ -25,20 +25,4 @@ export const TransactionHistory = ({ transactions }) => {
       </table>
     </section>
   );
-};
-
-const TransactionItem = ({ type, amount, currency, id }) => {
-  return (
-    <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
-  );
-};
-TransactionItem.propTypes = {
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
-  id: PropTypes.string,
 };
